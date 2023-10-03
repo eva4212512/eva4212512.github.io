@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* 自訂樣式 */
+    .navbar-dark {
+      background-color: #343a40; /* 深黑色 */
+    }
+    body {
+  background-color: #F1E1FF; /* 背景顏色為#F1E1FF */
+}
+
+.navbar-brand {
+  font-weight: bold; /* 網站名稱為粗體 */
+}
+
+.navbar-nav {
+  text-align: center; /* 導覽列的文字置中 */
+}
+
+  </style>
+  <title>導覽列設計</title>
+  <script>
+   // 按下「我的作品」按鈕，顯示圖片
+document.getElementById('myWorksButton').addEventListener('click', function() {
+  // 取得圖片元素
+  var myWorksImage = document.getElementById('myWorksImage');
+
+  // 設定圖片的 src 屬性
+  myWorksImage.src = 'https://tokyo-kitchen.icook.network/uploads/recipe/cover/405359/a37a652d46cfefbe.jpg';
+
+  // 顯示圖片
+  myWorksImage.style.display = 'block';
+}); 
+  </script>
+</head>
+<body>
+
+<!-- 導覽列部分 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">我的網站</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">個人資料</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">我的作品</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">我的筆記</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 圖片展示區塊 -->
+<h2>這是我最愛的桌子</h2>
+<div class="card" style="width: 18rem;">
+  <img src="https://669pic-img-server-02.oss-cn-hongkong.aliyuncs.com//element2/94d2ce644e79ba2d8a6c76011bb4e90a.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">...</h5>
+    <p class="card-text">我是一張桌子</p>
+  </div>
+</div>
+<br><br>
+<!-- 嵌入的 YouTube 影片 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FEcyS-TWN14?si=ndi4uQoN80AADrWj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- 引入 Bootstrap 和 JavaScript 相關檔案 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
